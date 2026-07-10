@@ -1,0 +1,101 @@
+<svg width="1200" height="390" viewBox="0 0 1200 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Induwara Kannangara</title>
+  <desc id="desc">Animated profile banner for a full-stack developer and AI systems builder.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070B18" />
+      <stop offset="0.5" stop-color="#11122A" />
+      <stop offset="1" stop-color="#071521" />
+      <animate attributeName="x1" values="0;240;0" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="1200;960;1200" dur="10s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <linearGradient id="accent" x1="200" y1="70" x2="980" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#2563EB;#7C3AED" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#34D399;#22D3EE" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop stop-color="#7C3AED" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#8B5CF6" stroke-opacity="0.1" stroke-width="1" />
+    </pattern>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <clipPath id="frame">
+      <rect width="1200" height="390" rx="28" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="390" rx="28" fill="url(#background)" />
+    <rect width="1200" height="390" fill="url(#grid)" />
+
+    <circle cx="1040" cy="32" r="250" fill="url(#glow)" opacity="0.45">
+      <animate attributeName="cx" values="1040;970;1040" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="cy" values="32;70;32" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="80" cy="350" r="210" fill="url(#glow)" opacity="0.28">
+      <animate attributeName="r" values="180;230;180" dur="9s" repeatCount="indefinite" />
+    </circle>
+
+    <path d="M0 312 C190 245 290 365 480 300 S805 235 1200 315" stroke="url(#accent)" stroke-opacity="0.28" stroke-width="2" stroke-dasharray="10 14">
+      <animate attributeName="stroke-dashoffset" values="0;-96" dur="5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 332 C220 270 330 385 535 318 S870 270 1200 340" stroke="#22D3EE" stroke-opacity="0.12" stroke-width="1" />
+
+    <g transform="translate(895 195)">
+      <circle r="122" stroke="#7C3AED" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="6 10">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite" />
+      </circle>
+      <circle r="88" stroke="#22D3EE" stroke-opacity="0.32" stroke-width="1.5" stroke-dasharray="3 9">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite" />
+      </circle>
+      <circle r="51" fill="#0D1328" stroke="#8B5CF6" stroke-width="2" filter="url(#softGlow)" />
+      <path d="M-20 -8 L0 -28 L20 -8 M-20 8 L0 28 L20 8" stroke="#22D3EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="0" cy="-122" r="5" fill="#22D3EE" filter="url(#softGlow)" />
+      <circle cx="88" cy="0" r="4" fill="#8B5CF6" filter="url(#softGlow)" />
+    </g>
+
+    <g font-family="Inter, Segoe UI, Arial, sans-serif">
+      <text x="72" y="154" fill="#F8FAFC" font-size="58" font-weight="800" letter-spacing="-2">INDUWARA</text>
+      <text x="72" y="214" fill="#A78BFA" font-size="58" font-weight="800" letter-spacing="-2">KANNANGARA</text>
+
+      <rect x="72" y="239" width="510" height="2" rx="1" fill="#22D3EE">
+        <animate attributeName="width" values="120;510;120" dur="7s" repeatCount="indefinite" />
+      </rect>
+
+      <text x="74" y="278" fill="#CBD5E1" font-size="18" font-weight="600" letter-spacing="2.5">FULL-STACK  /  AGENTIC AI  /  SOFTWARE</text>
+      <text x="74" y="312" fill="#7DD3FC" font-size="14" font-weight="500" letter-spacing="0.8">Building practical systems from idea to production.</text>
+
+      <g transform="translate(1015 74)">
+        <rect width="120" height="31" rx="8" fill="#111A34" stroke="#7C3AED" stroke-opacity="0.5" />
+        <text x="16" y="21" fill="#C4B5FD" font-size="12" font-weight="700">{ AI + CODE }</text>
+        <animateTransform attributeName="transform" type="translate" values="1015 74;1015 84;1015 74" dur="4s" repeatCount="indefinite" />
+      </g>
+
+      <g transform="translate(985 300)">
+        <rect width="150" height="31" rx="8" fill="#0D1C2A" stroke="#22D3EE" stroke-opacity="0.45" />
+        <text x="17" y="21" fill="#67E8F9" font-size="12" font-weight="700">SHIP. LEARN. REPEAT.</text>
+        <animateTransform attributeName="transform" type="translate" values="985 300;970 300;985 300" dur="5s" repeatCount="indefinite" />
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="388" rx="27" stroke="#7C3AED" stroke-opacity="0.42" stroke-width="2" />
+  </g>
+</svg>
